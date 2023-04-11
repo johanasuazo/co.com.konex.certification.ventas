@@ -1,0 +1,213 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;title&gt;Ventas&lt;/title&gt; <br/>
+  &lt;base href="/"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; <br/>
+  &lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt; &lt;!-- &lt;script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"&gt;&lt;/script&gt; --&gt; <br/>
+  &lt;script src="assets/js/jquery-3.3.1.js" crossorigin="anonymous"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="styles.f5196f2c1c45f795b98f.css"&gt;<br/>
+  &lt;style&gt;.tootlbar-icon[_ngcontent-opo-c11]{padding:0 14px}.tootlbar-spacer[_ngcontent-opo-c11]{flex:1 1 auto}.loading[_ngcontent-opo-c11]{z-index:9999;height:2em;width:2em;overflow:show;margin:auto;bottom:0;right:0}.loading[_ngcontent-opo-c11], .loading[_ngcontent-opo-c11]:before{position:fixed;top:0;left:0}.loading[_ngcontent-opo-c11]:before{content:"";display:block;width:100%;height:100%;background-color:rgba(0,0,0,.3)}.loading[_ngcontent-opo-c11]:not(:required){font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.loading[_ngcontent-opo-c11]:not(:required):after{content:"";display:block;font-size:10px;width:1em;height:1em;margin-top:-.5em;animation:spinner 1.5s linear infinite;border-radius:.5em;box-shadow:1.5em 0 0 0 rgba(0,0,0,.75),1.1em 1.1em 0 0 rgba(0,0,0,.75),0 1.5em 0 0 rgba(0,0,0,.75),-1.1em 1.1em 0 0 rgba(0,0,0,.75),-1.5em 0 0 0 rgba(0,0,0,.75),-1.1em -1.1em 0 0 rgba(0,0,0,.75),0 -1.5em 0 0 rgba(0,0,0,.75),1.1em -1.1em 0 0 rgba(0,0,0,.75)}@keyframes spinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}&lt;/style&gt;<br/>
+  &lt;script charset="utf-8" src="2-es2015.5a0fd1e224549927963d.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="common-es2015.af664ad3fdd4f5adf6cb.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="11-es2015.a593ea620bb5ea3b0d51.js"&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;.pnl-1[_ngcontent-opo-c101]{height:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;background-image:url(/assets/login/2752811.png);background-repeat:no-repeat;background-size:cover;background-position:50%;background-attachment:fixed}.pnl-1[_ngcontent-opo-c101]:before{content:"";width:100%;min-height:100vh;position:fixed;background:transparent linear-gradient(305deg,#b10d0d,#e90505) 0 0 no-repeat padding-box;opacity:.73}.pnl-2[_ngcontent-opo-c101]{width:80%;height:560px;border-radius:25px;box-shadow:0 0 11px 0 rgba(0,0,0,.16);background-color:#fff;z-index:1}@media(min-width:768px){.pnl-2[_ngcontent-opo-c101]{width:370px}.container[_ngcontent-opo-c101]{padding-left:35px!important;padding-right:35px!important;margin-top:1rem!important}}.img-login[_ngcontent-opo-c101]{text-align:center;padding-top:10%}.logo-login[_ngcontent-opo-c101]{width:220px;height:220px;-o-object-fit:contain;object-fit:contain}.container[_ngcontent-opo-c101]{padding-left:10px;padding-right:10px;margin-top:1rem}.subtitle[_ngcontent-opo-c101]{font-family:Open Sans,sans-serif!important;color:#616161;font-weight:700}.inner-addon[_ngcontent-opo-c101]{position:relative}.aico-eye[_ngcontent-opo-c101], .inner-addon[_ngcontent-opo-c101]   .aico[_ngcontent-opo-c101]{position:absolute}.aico-eye[_ngcontent-opo-c101], .left-addon[_ngcontent-opo-c101]   .aico[_ngcontent-opo-c101]{left:91%;padding-top:8px}.left-addon[_ngcontent-opo-c101]   input[_ngcontent-opo-c101]{padding-right:30px}.aico[_ngcontent-opo-c101], .aico-eye[_ngcontent-opo-c101]{color:#999;z-index:1}.aico-eye[_ngcontent-opo-c101]{cursor:pointer}.aico-eye[_ngcontent-opo-c101]:hover{color:#0083fe}.requerido[_ngcontent-opo-c101]{box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(169,68,66,.6)}.footer[_ngcontent-opo-c101]{position:absolute;z-index:1;left:0;bottom:0;width:100%;text-align:center;padding-left:20px;font-size:15px;font-stretch:normal;font-style:normal;line-height:1.3;letter-spacing:normal;color:#f1f1f1}.footer[_ngcontent-opo-c101], .li[_ngcontent-opo-c101]{font-family:Open Sans,sans-serif!important}.li[_ngcontent-opo-c101]{font-size:14px;color:#0083fe;cursor:pointer}.li[_ngcontent-opo-c101]:hover{color:#124a7e}.input2[_ngcontent-opo-c101]{border-radius:6px;background-color:#f4f8fb;padding:7px 15px;border:0;outline:medium none;font-family:Open Sans,sans-serif!important}[_ngcontent-opo-c101]::-moz-placeholder{color:#999;font-size:15px}[_ngcontent-opo-c101]::placeholder{color:#999;font-size:15px}.user-icon[_ngcontent-opo-c101]{color:#fff;font-size:20px}.btn-less[_ngcontent-opo-c101]{box-shadow:0 3.5px 4px 0 rgba(167,187,190,.45);border-radius:15px;background-color:#6c757d;color:#f1f1f1;padding:.3rem .8rem;border:0;outline:0!important}.btn-less[_ngcontent-opo-c101]:hover{background-color:#50585f}.btn-light[_ngcontent-opo-c101]{box-shadow:0 1.5px 4px 0 rgba(20,157,183,.45)!important;border-radius:15px;background-color:#2076bd!important;color:#f1f1f1;padding:.3rem .8rem;border:0;outline:0!important}.btn-light[_ngcontent-opo-c101]:hover{background-color:#2684d1!important}.puntero[_ngcontent-opo-c101]{cursor:pointer}.title-pl[_ngcontent-opo-c101]{font:normal normal normal 16px/18px Open Sans,sans-serif;color:#333}.lbltitle[_ngcontent-opo-c101]{color:#333;font-size:15px;font-family:Open Sans,sans-serif!important}.btn-icon[_ngcontent-opo-c101], .btn-label[_ngcontent-opo-c101]{color:#f1f1f1}.btn-label[_ngcontent-opo-c101]{font:normal normal normal 15px/17px Open Sans,sans-serif;margin:0!important;cursor:pointer}.tbl-row[_ngcontent-opo-c101]{font:normal normal normal 14px/16px Open Sans,sans-serif;color:#333;font-weight:700}.tbl-row[_ngcontent-opo-c101]:hover{background-color:#f0f1f3;cursor:pointer}.row-selected[_ngcontent-opo-c101]{padding-top:4px!important;padding-left:4px;display:inline-block}.icon-selected[_ngcontent-opo-c101]{padding-bottom:4px!important;font-size:20px;color:#23ad44}.my-custom-scrollbar[_ngcontent-opo-c101]{position:relative;max-height:167px;overflow:auto}.table-wrapper-scroll-y[_ngcontent-opo-c101]{display:block}.link-recuperar-pass[_ngcontent-opo-c101]{color:var(--color-red-text-info)}[_nghost-opo-c101]     .mat-form-field-flex{padding:0!important;border-radius:6px!important}[_nghost-opo-c101]     .mat-form-field-wrapper{padding-bottom:0!important}[_nghost-opo-c101]     .mat-form-field-label-wrapper{top:-.60375em!important}[_nghost-opo-c101]     .mat-form-field-appearance-fill .mat-form-field-infix{padding:7px 5px!important}.mat-form-field-type-mat-native-select.mat-form-field-disabled[_ngcontent-opo-c101]   .mat-form-field-infix[_ngcontent-opo-c101]:after, [_nghost-opo-c101]     .mat-input-element:disabled{color:#333!important}[_nghost-opo-c101]     .mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-flex{background-color:rgba(133,172,205,.09019607843137255)!important}[_nghost-opo-c101]     .mat-form-field-infix{width:38vh!important}.btn-cancelar2[_ngcontent-opo-c101]{background-color:var(--color-white)!important;font-size:var(--font-size-menu)!important;text-align:left!important;color:var(--color-red-cancelar-info)!important;border:none!important;outline:none!important}.btn-aceptar2[_ngcontent-opo-c101], .btn-cancelar2[_ngcontent-opo-c101]{font-weight:700!important;text-transform:uppercase!important}.btn-aceptar2[_ngcontent-opo-c101]{border-radius:25px!important;box-shadow:0 3px 8px var(--color-border-transparent)!important;font-size:var(--font-size-lg)!important;width:30%!important;color:var(--color-white)!important;border-color:hsla(0,0%,100%,0)}&lt;/style&gt;<br/>
+  &lt;script charset="utf-8" src="8-es2015.9b1ee568c1121d385fee.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="3-es2015.66ab3d4ff92877056d6a.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="13-es2015.06a98e723e3beda4d5fd.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="10-es2015.81ff790c89ce4a5b49eb.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="14-es2015.34d9a2e34456ed4bb939.js"&gt;&lt;/script&gt;<br/>
+  &lt;script charset="utf-8" src="9-es2015.7bae923b0940dfd9a035.js"&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;.mat-form-field{display:inline-block;position:relative;text-align:left}[dir=rtl] .mat-form-field{text-align:right}.mat-form-field-wrapper{position:relative}.mat-form-field-flex{display:inline-flex;align-items:baseline;box-sizing:border-box;width:100%}.mat-form-field-prefix,.mat-form-field-suffix{white-space:nowrap;flex:none;position:relative}.mat-form-field-infix{display:block;position:relative;flex:auto;min-width:0;width:180px}.cdk-high-contrast-active .mat-form-field-infix{border-image:linear-gradient(transparent, transparent)}.mat-form-field-label-wrapper{position:absolute;left:0;box-sizing:content-box;width:100%;height:100%;overflow:hidden;pointer-events:none}[dir=rtl] .mat-form-field-label-wrapper{left:auto;right:0}.mat-form-field-label{position:absolute;left:0;font:inherit;pointer-events:none;width:100%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;transform-origin:0 0;transition:transform 400ms cubic-bezier(0.25, 0.8, 0.25, 1),color 400ms cubic-bezier(0.25, 0.8, 0.25, 1),width 400ms cubic-bezier(0.25, 0.8, 0.25, 1);display:none}[dir=rtl] .mat-form-field-label{transform-origin:100% 0;left:auto;right:0}.mat-form-field-empty.mat-form-field-label,.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{display:block}.mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-label-wrapper .mat-form-field-label{display:none}.mat-form-field-can-float .mat-form-field-autofill-control:-webkit-autofill+.mat-form-field-label-wrapper .mat-form-field-label{display:block;transition:none}.mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label,.mat-input-server[placeholder]:not(:placeholder-shown)+.mat-form-field-label-wrapper .mat-form-field-label{display:none}.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label,.mat-form-field-can-float .mat-input-server[placeholder]:not(:placeholder-shown)+.mat-form-field-label-wrapper .mat-form-field-label{display:block}.mat-form-field-label:not(.mat-form-field-empty){transition:none}.mat-form-field-underline{position:absolute;width:100%;pointer-events:none;transform:scale3d(1, 1.0001, 1)}.mat-form-field-ripple{position:absolute;left:0;width:100%;transform-origin:50%;transform:scaleX(0.5);opacity:0;transition:background-color 300ms cubic-bezier(0.55, 0, 0.55, 0.2)}.mat-form-field.mat-focused .mat-form-field-ripple,.mat-form-field.mat-form-field-invalid .mat-form-field-ripple{opacity:1;transform:scaleX(1);transition:transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1),opacity 100ms cubic-bezier(0.25, 0.8, 0.25, 1),background-color 300ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-form-field-subscript-wrapper{position:absolute;box-sizing:border-box;width:100%;overflow:hidden}.mat-form-field-subscript-wrapper .mat-icon,.mat-form-field-label-wrapper .mat-icon{width:1em;height:1em;font-size:inherit;vertical-align:baseline}.mat-form-field-hint-wrapper{display:flex}.mat-form-field-hint-spacer{flex:1 0 1em}.mat-error{display:block}.mat-form-field-control-wrapper{position:relative}.mat-form-field._mat-animation-noopable .mat-form-field-label,.mat-form-field._mat-animation-noopable .mat-form-field-ripple{transition:none}<br/>
+&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-form-field-appearance-fill .mat-form-field-flex{border-radius:4px 4px 0 0;padding:.75em .75em 0 .75em}.cdk-high-contrast-active .mat-form-field-appearance-fill .mat-form-field-flex{outline:solid 1px}.mat-form-field-appearance-fill .mat-form-field-underline::before{content:"";display:block;position:absolute;bottom:0;height:1px;width:100%}.mat-form-field-appearance-fill .mat-form-field-ripple{bottom:0;height:2px}.cdk-high-contrast-active .mat-form-field-appearance-fill .mat-form-field-ripple{height:0;border-top:solid 2px}.mat-form-field-appearance-fill:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{opacity:1;transform:none;transition:opacity 600ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-form-field-appearance-fill._mat-animation-noopable:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{transition:none}.mat-form-field-appearance-fill .mat-form-field-subscript-wrapper{padding:0 1em}<br/>
+&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-input-element{font:inherit;background:transparent;color:currentColor;border:none;outline:none;padding:0;margin:0;width:100%;max-width:100%;vertical-align:bottom;text-align:inherit}.mat-input-element:-moz-ui-invalid{box-shadow:none}.mat-input-element::-ms-clear,.mat-input-element::-ms-reveal{display:none}.mat-input-element,.mat-input-element::-webkit-search-cancel-button,.mat-input-element::-webkit-search-decoration,.mat-input-element::-webkit-search-results-button,.mat-input-element::-webkit-search-results-decoration{-webkit-appearance:none}.mat-input-element::-webkit-contacts-auto-fill-button,.mat-input-element::-webkit-caps-lock-indicator,.mat-input-element::-webkit-credentials-auto-fill-button{visibility:hidden}.mat-input-element[type=date],.mat-input-element[type=datetime],.mat-input-element[type=datetime-local],.mat-input-element[type=month],.mat-input-element[type=week],.mat-input-element[type=time]{line-height:1}.mat-input-element[type=date]::after,.mat-input-element[type=datetime]::after,.mat-input-element[type=datetime-local]::after,.mat-input-element[type=month]::after,.mat-input-element[type=week]::after,.mat-input-element[type=time]::after{content:" ";white-space:pre;width:1px}.mat-input-element::-webkit-inner-spin-button,.mat-input-element::-webkit-calendar-picker-indicator,.mat-input-element::-webkit-clear-button{font-size:.75em}.mat-input-element::placeholder{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-input-element::placeholder:-ms-input-placeholder{-ms-user-select:text}.mat-input-element::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-input-element::-moz-placeholder:-ms-input-placeholder{-ms-user-select:text}.mat-input-element::-webkit-input-placeholder{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-input-element::-webkit-input-placeholder:-ms-input-placeholder{-ms-user-select:text}.mat-input-element:-ms-input-placeholder{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;transition:color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-input-element:-ms-input-placeholder:-ms-input-placeholder{-ms-user-select:text}.mat-form-field-hide-placeholder .mat-input-element::placeholder{color:transparent !important;-webkit-text-fill-color:transparent;transition:none}.mat-form-field-hide-placeholder .mat-input-element::-moz-placeholder{color:transparent !important;-webkit-text-fill-color:transparent;transition:none}.mat-form-field-hide-placeholder .mat-input-element::-webkit-input-placeholder{color:transparent !important;-webkit-text-fill-color:transparent;transition:none}.mat-form-field-hide-placeholder .mat-input-element:-ms-input-placeholder{color:transparent !important;-webkit-text-fill-color:transparent;transition:none}textarea.mat-input-element{resize:vertical;overflow:auto}textarea.mat-input-element.cdk-textarea-autosize{resize:none}textarea.mat-input-element{padding:2px 0;margin:-2px 0}select.mat-input-element{-moz-appearance:none;-webkit-appearance:none;position:relative;background-color:transparent;display:inline-flex;box-sizing:border-box;padding-top:1em;top:-1em;margin-bottom:-1em}select.mat-input-element::-ms-expand{display:none}select.mat-input-element::-moz-focus-inner{border:0}select.mat-input-element:not(:disabled){cursor:pointer}select.mat-input-element::-ms-value{color:inherit;background:none}.mat-focused .cdk-high-contrast-active select.mat-input-element::-ms-value{color:inherit}.mat-form-field-type-mat-native-select .mat-form-field-infix::after{content:"";width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid;position:absolute;top:50%;right:0;margin-top:-2.5px;pointer-events:none}[dir=rtl] .mat-form-field-type-mat-native-select .mat-form-field-infix::after{right:auto;left:0}.mat-form-field-type-mat-native-select .mat-input-element{padding-right:15px}[dir=rtl] .mat-form-field-type-mat-native-select .mat-input-element{padding-right:0;padding-left:15px}.mat-form-field-type-mat-native-select .mat-form-field-label-wrapper{max-width:calc(100% - 10px)}.mat-form-field-type-mat-native-select.mat-form-field-appearance-outline .mat-form-field-infix::after{margin-top:-5px}.mat-form-field-type-mat-native-select.mat-form-field-appearance-fill .mat-form-field-infix::after{margin-top:-10px}<br/>
+&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-form-field-appearance-legacy .mat-form-field-label{transform:perspective(100px);-ms-transform:none}.mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon,.mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon{width:1em}.mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon-button,.mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button{font:inherit;vertical-align:baseline}.mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button .mat-icon{font-size:inherit}.mat-form-field-appearance-legacy .mat-form-field-underline{height:1px}.cdk-high-contrast-active .mat-form-field-appearance-legacy .mat-form-field-underline{height:0;border-top:solid 1px}.mat-form-field-appearance-legacy .mat-form-field-ripple{top:0;height:2px;overflow:hidden}.cdk-high-contrast-active .mat-form-field-appearance-legacy .mat-form-field-ripple{height:0;border-top:solid 2px}.mat-form-field-appearance-legacy.mat-form-field-disabled .mat-form-field-underline{background-position:0;background-color:transparent}.cdk-high-contrast-active .mat-form-field-appearance-legacy.mat-form-field-disabled .mat-form-field-underline{border-top-style:dotted;border-top-width:2px}.mat-form-field-appearance-legacy.mat-form-field-invalid:not(.mat-focused) .mat-form-field-ripple{height:1px}<br/>
+&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-form-field-appearance-outline .mat-form-field-wrapper{margin:.25em 0}.mat-form-field-appearance-outline .mat-form-field-flex{padding:0 .75em 0 .75em;margin-top:-0.25em;position:relative}.mat-form-field-appearance-outline .mat-form-field-prefix,.mat-form-field-appearance-outline .mat-form-field-suffix{top:.25em}.mat-form-field-appearance-outline .mat-form-field-outline{display:flex;position:absolute;top:.25em;left:0;right:0;bottom:0;pointer-events:none}.mat-form-field-appearance-outline .mat-form-field-outline-start,.mat-form-field-appearance-outline .mat-form-field-outline-end{border:1px solid currentColor;min-width:5px}.mat-form-field-appearance-outline .mat-form-field-outline-start{border-radius:5px 0 0 5px;border-right-style:none}[dir=rtl] .mat-form-field-appearance-outline .mat-form-field-outline-start{border-right-style:solid;border-left-style:none;border-radius:0 5px 5px 0}.mat-form-field-appearance-outline .mat-form-field-outline-end{border-radius:0 5px 5px 0;border-left-style:none;flex-grow:1}[dir=rtl] .mat-form-field-appearance-outline .mat-form-field-outline-end{border-left-style:solid;border-right-style:none;border-radius:5px 0 0 5px}.mat-form-field-appearance-outline .mat-form-field-outline-gap{border-radius:.000001px;border:1px solid currentColor;border-left-style:none;border-right-style:none}.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-outline-gap{border-top-color:transparent}.mat-form-field-appearance-outline .mat-form-field-outline-thick{opacity:0}.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start,.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-end,.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-gap{border-width:2px}.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline,.mat-form-field-appearance-outline.mat-form-field-invalid .mat-form-field-outline{opacity:0;transition:opacity 100ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,.mat-form-field-appearance-outline.mat-form-field-invalid .mat-form-field-outline-thick{opacity:1}.mat-form-field-appearance-outline:not(.mat-form-field-disabled) .mat-form-field-flex:hover .mat-form-field-outline{opacity:0;transition:opacity 600ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-form-field-appearance-outline:not(.mat-form-field-disabled) .mat-form-field-flex:hover .mat-form-field-outline-thick{opacity:1}.mat-form-field-appearance-outline .mat-form-field-subscript-wrapper{padding:0 1em}.mat-form-field-appearance-outline._mat-animation-noopable:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-outline,.mat-form-field-appearance-outline._mat-animation-noopable .mat-form-field-outline,.mat-form-field-appearance-outline._mat-animation-noopable .mat-form-field-outline-start,.mat-form-field-appearance-outline._mat-animation-noopable .mat-form-field-outline-end,.mat-form-field-appearance-outline._mat-animation-noopable .mat-form-field-outline-gap{transition:none}<br/>
+&lt;/style&gt;<br/>
+  &lt;style&gt;.mat-form-field-appearance-standard .mat-form-field-flex{padding-top:.75em}.mat-form-field-appearance-standard .mat-form-field-underline{height:1px}.cdk-high-contrast-active .mat-form-field-appearance-standard .mat-form-field-underline{height:0;border-top:solid 1px}.mat-form-field-appearance-standard .mat-form-field-ripple{bottom:0;height:2px}.cdk-high-contrast-active .mat-form-field-appearance-standard .mat-form-field-ripple{height:0;border-top:2px}.mat-form-field-appearance-standard.mat-form-field-disabled .mat-form-field-underline{background-position:0;background-color:transparent}.cdk-high-contrast-active .mat-form-field-appearance-standard.mat-form-field-disabled .mat-form-field-underline{border-top-style:dotted;border-top-width:2px}.mat-form-field-appearance-standard:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{opacity:1;transform:none;transition:opacity 600ms cubic-bezier(0.25, 0.8, 0.25, 1)}.mat-form-field-appearance-standard._mat-animation-noopable:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{transition:none}<br/>
+&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body class="mat-typography ui-overflow-hidden"&gt; &lt;app-root ng-version="9.1.13"&gt;<br/>
+   &lt;app-spinner _nghost-opo-c11=""&gt;<br/>
+    &lt;!----&gt;<br/>
+   &lt;/app-spinner&gt;<br/>
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;<br/>
+   &lt;ng-component _nghost-opo-c101=""&gt;<br/>
+    &lt;div _ngcontent-opo-c101="" class="pnl-1"&gt;<br/>
+     &lt;div _ngcontent-opo-c101="" class="pnl-2"&gt;<br/>
+      &lt;div _ngcontent-opo-c101="" class="img-login"&gt;<br/>
+       &lt;img _ngcontent-opo-c101="" src="assets/img/svg/logo-paga-todo.svg" alt="Logotipo de pagatodo" class="logo-login"&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;form _ngcontent-opo-c101="" novalidate name="formLogin" class="ng-dirty ng-touched ng-valid"&gt;<br/>
+       &lt;div _ngcontent-opo-c101="" class="ui-g container"&gt;<br/>
+        &lt;div _ngcontent-opo-c101="" class="ui-g-12 subtitle"&gt;<br/>
+         &lt;p _ngcontent-opo-c101="" class="mb-0 font-size-16"&gt;¡Empieza a manejar tus&lt;/p&gt;<br/>
+         &lt;p _ngcontent-opo-c101="" class="mb-0"&gt;transacciones de forma eficiente!&lt;/p&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-opo-c101="" class="ui-g-12 mt-3"&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="inner-addon left-addon"&gt;<br/>
+          &lt;input _ngcontent-opo-c101="" type="text" id="username" name="username" maxlength="55" autocomplete="off" apprequired="" appautofocus="" placeholder="Usuario" class="w-100 input2 ng-dirty ng-valid ng-touched"&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-opo-c101="" class="ui-g-12"&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="inner-addon left-addon"&gt;<br/>
+          &lt;i _ngcontent-opo-c101="" class="fa fa-eye font-size-16 aico-eye"&gt;&lt;/i&gt;<br/>
+          &lt;input _ngcontent-opo-c101="" type="password" maxlength="255" id="clave" name="clave" autocomplete="off" apprequired="" placeholder="Contraseña" class="w-100 input2 ng-dirty ng-valid ng-touched"&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div _ngcontent-opo-c101="" class="ui-g-12 mb-0 pb-0 text-center"&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="inner-addon left-addon"&gt;<br/>
+          &lt;button _ngcontent-opo-c101="" type="submit" class="btn btn-login2 w-100"&gt;&lt;span _ngcontent-opo-c101="" class="mr-2 font-size-12 font-weight-bold"&gt;INICIAR SESIÓN&lt;/span&gt;&lt;/button&gt;<br/>
+          &lt;p _ngcontent-opo-c101="" class="link-recuperar-pass mt-3"&gt;Recuperar contraseña&lt;/p&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p _ngcontent-opo-c101="" class="text-danger text-center font-montse" style="margin-top: -10px;"&gt;&lt;/p&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/form&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div _ngcontent-opo-c101="" class="footer"&gt;<br/>
+      &lt;p _ngcontent-opo-c101="" class="mb-0"&gt;Copyright companyname.co - 2023&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;p-dialog _ngcontent-opo-c101="" header="Punto de venta" modal="true" class="ng-tns-c100-0 ng-star-inserted"&gt;<br/>
+     &lt;div class="ng-tns-c100-0 ui-dialog-mask ui-widget-overlay ui-dialog-visible ui-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1000;"&gt;<br/>
+      &lt;div pfocustrap="" role="dialog" class="ng-trigger ng-trigger-animation ng-tns-c100-0 ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-dialog-draggable ui-dialog-resizable ng-star-inserted" aria-labelledby="ui-dialog-0-label" style="width: 45vw; z-index: 1001;"&gt;<br/>
+       &lt;div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top ng-tns-c100-0 ng-star-inserted" style=""&gt;<br/>
+        &lt;span class="ui-dialog-title ng-tns-c100-0 ng-star-inserted" id="ui-dialog-0-label"&gt;Punto de venta&lt;/span&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;div class="ui-dialog-titlebar-icons ng-tns-c100-0"&gt;<br/>
+         &lt;!----&gt;&lt;!----&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;!----&gt;<br/>
+       &lt;div class="ng-tns-c100-0 ui-dialog-content ui-widget-content"&gt;<br/>
+        &lt;div _ngcontent-opo-c101="" class="ui-g ng-tns-c100-0"&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="ui-g-12 p-0 pt-2"&gt;<br/>
+          &lt;span _ngcontent-opo-c101="" class="title-pl"&gt;Seleccione la papelería para iniciar operaciones:&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="ui-g-12 p-0 pb-2 pt-0"&gt;<br/>
+          &lt;div _ngcontent-opo-c101="" class="ui-g-6 p-0 pr-2"&gt;<br/>
+           &lt;mat-form-field _ngcontent-opo-c101="" appearance="fill" class="mat-form-field ng-tns-c38-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-fill mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine mat-form-field-disabled"&gt;<br/>
+            &lt;div class="mat-form-field-wrapper ng-tns-c38-1"&gt;<br/>
+             &lt;div class="mat-form-field-flex ng-tns-c38-1"&gt;<br/>
+              &lt;!----&gt;&lt;!----&gt;<br/>
+              &lt;div class="mat-form-field-infix ng-tns-c38-1"&gt;<br/>
+               &lt;input _ngcontent-opo-c101="" matinput="" id="serieUno" pkeyfilter="pint" type="text" title="Serie1" maxlength="4" class="mat-input-element mat-form-field-autofill-control input-app-sm w-100 ng-tns-c38-1 cdk-text-field-autofill-monitored ng-untouched ng-pristine" aria-invalid="false" aria-required="false" disabled&gt;&lt;span class="mat-form-field-label-wrapper ng-tns-c38-1"&gt;&lt;label class="mat-form-field-label ng-tns-c38-1 mat-empty mat-form-field-empty ng-star-inserted" id="mat-form-field-label-1" for="serieUno" aria-owns="serieUno" style=""&gt;&lt;!----&gt;<br/>
+                 &lt;mat-label _ngcontent-opo-c101="" class="lbltitle mb-0 pl-2 ng-tns-c38-1 ng-star-inserted"&gt;<br/>
+                  Serie 1<br/>
+                 &lt;/mat-label&gt;&lt;!----&gt;&lt;!----&gt;&lt;/label&gt;&lt;!----&gt;&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="mat-form-field-underline ng-tns-c38-1 ng-star-inserted" style=""&gt;<br/>
+              &lt;span class="mat-form-field-ripple ng-tns-c38-1"&gt;&lt;/span&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;<br/>
+             &lt;div class="mat-form-field-subscript-wrapper ng-tns-c38-1"&gt;<br/>
+              &lt;!----&gt;<br/>
+              &lt;div class="mat-form-field-hint-wrapper ng-tns-c38-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted" style="opacity: 1; transform: translateY(0%);"&gt;<br/>
+               &lt;!----&gt;<br/>
+               &lt;div class="mat-form-field-hint-spacer ng-tns-c38-1"&gt;&lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/mat-form-field&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div _ngcontent-opo-c101="" class="ui-g-6 p-0 pl-2"&gt;<br/>
+           &lt;mat-form-field _ngcontent-opo-c101="" appearance="fill" class="mat-form-field ng-tns-c38-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-fill mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine mat-form-field-disabled"&gt;<br/>
+            &lt;div class="mat-form-field-wrapper ng-tns-c38-2"&gt;<br/>
+             &lt;div class="mat-form-field-flex ng-tns-c38-2"&gt;<br/>
+              &lt;!----&gt;&lt;!----&gt;<br/>
+              &lt;div class="mat-form-field-infix ng-tns-c38-2"&gt;<br/>
+               &lt;input _ngcontent-opo-c101="" matinput="" id="serieDos" pkeyfilter="pint" type="text" title="Serie2" maxlength="8" class="mat-input-element mat-form-field-autofill-control input-app-sm w-100 ng-tns-c38-2 cdk-text-field-autofill-monitored ng-untouched ng-pristine" aria-invalid="false" aria-required="false" disabled&gt;&lt;span class="mat-form-field-label-wrapper ng-tns-c38-2"&gt;&lt;label class="mat-form-field-label ng-tns-c38-2 mat-empty mat-form-field-empty ng-star-inserted" id="mat-form-field-label-3" for="serieDos" aria-owns="serieDos" style=""&gt;&lt;!----&gt;<br/>
+                 &lt;mat-label _ngcontent-opo-c101="" class="lbltitle mb-0 pl-2 ng-tns-c38-2 ng-star-inserted"&gt;<br/>
+                  Serie 2<br/>
+                 &lt;/mat-label&gt;&lt;!----&gt;&lt;!----&gt;&lt;/label&gt;&lt;!----&gt;&lt;/span&gt;<br/>
+              &lt;/div&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="mat-form-field-underline ng-tns-c38-2 ng-star-inserted" style=""&gt;<br/>
+              &lt;span class="mat-form-field-ripple ng-tns-c38-2"&gt;&lt;/span&gt;<br/>
+             &lt;/div&gt;&lt;!----&gt;<br/>
+             &lt;div class="mat-form-field-subscript-wrapper ng-tns-c38-2"&gt;<br/>
+              &lt;!----&gt;<br/>
+              &lt;div class="mat-form-field-hint-wrapper ng-tns-c38-2 ng-trigger ng-trigger-transitionMessages ng-star-inserted" style="opacity: 1; transform: translateY(0%);"&gt;<br/>
+               &lt;!----&gt;<br/>
+               &lt;div class="mat-form-field-hint-spacer ng-tns-c38-2"&gt;&lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;!----&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/mat-form-field&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="ui-g-12 p-0 pt-3"&gt;<br/>
+          &lt;span _ngcontent-opo-c101="" class="title-pl"&gt;Papelería asignada&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="ui-g-12 p-0 pb-2 pt-0"&gt;<br/>
+          &lt;div _ngcontent-opo-c101="" class="table-wrapper-scroll-y my-custom-scrollbar"&gt;<br/>
+           &lt;table _ngcontent-opo-c101="" class="w-100 table table-sm table-bordered table-hover"&gt;<br/>
+            &lt;tbody&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0006501&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0007001&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0007501&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0008001&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0008501&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0009001&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0009501&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0010001&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0010501&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0011001&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0011501&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;<br/>
+             &lt;tr _ngcontent-opo-c101="" class="ng-star-inserted" style=""&gt;<br/>
+              &lt;td _ngcontent-opo-c101="" class="text-left tbl-row"&gt;&lt;!----&gt;&lt;span _ngcontent-opo-c101="" class="pl-2 row-selected"&gt;WEB1-0012001&lt;/span&gt;&lt;/td&gt;<br/>
+             &lt;/tr&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+            &lt;/tbody&gt;<br/>
+           &lt;/table&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div _ngcontent-opo-c101="" class="ui-g-12 p-0 pb-2"&gt;<br/>
+          &lt;div _ngcontent-opo-c101="" class="ui-g-12 p-0 text-center" style="display: flex; justify-content: space-around;"&gt;<br/>
+           &lt;button _ngcontent-opo-c101="" type="button" title="Permite cerrar esta ventana" class="mr-3 w-120-px btn-cancelar2"&gt; CANCELAR &lt;/button&gt;&lt;button _ngcontent-opo-c101="" type="button" title="Permite seleccionar la papelería asignada" class="w-120-px btn-aceptar2" style="background-color: rgb(127, 150, 185);"&gt; ACEPTAR &lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;!----&gt;<br/>
+       &lt;div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ng-tns-c100-0 ng-star-inserted" style="z-index: 90;"&gt;&lt;/div&gt;&lt;!----&gt;<br/>
+      &lt;/div&gt;&lt;!----&gt;<br/>
+     &lt;/div&gt;&lt;!----&gt;<br/>
+    &lt;/p-dialog&gt;&lt;!----&gt;&lt;!----&gt;<br/>
+   &lt;/ng-component&gt;&lt;!----&gt;<br/>
+  &lt;/app-root&gt; <br/>
+  &lt;script src="runtime-es2015.02970afa23456a5ffaa4.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="runtime-es5.02970afa23456a5ffaa4.js" nomodule="" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="polyfills-es5.a995c7313ddd511594a8.js" nomodule="" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="polyfills-es2015.fed4facee5c2b1b8b8c5.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="scripts.9b2d0ce2d22aac970789.js" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="main-es2015.ac26a071533a4b45aa4f.js" type="module"&gt;&lt;/script&gt;<br/>
+  &lt;script src="main-es5.ac26a071533a4b45aa4f.js" nomodule="" defer&gt;&lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
