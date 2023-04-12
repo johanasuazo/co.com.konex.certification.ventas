@@ -1,3 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-11T16:54:00.378-05:00[America/Bogota]","0.0","48.48"
+"Verificar el login en ventas","Verificar el ingreso correcto con un usuario","SUCCESS","2023-04-12T08:50:30.472-05:00[America/Bogota]","0.0","20.23"
+"Verificar el login en ventas","Verificar el ingreso con contraseña o usuario incorrectos","SUCCESS","2023-04-12T09:33:44.299-05:00[America/Bogota]","0.0","38.05"
 "Verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","ERROR","2023-04-11T11:56:27.826-05:00[America/Bogota]","0.0","4.78"

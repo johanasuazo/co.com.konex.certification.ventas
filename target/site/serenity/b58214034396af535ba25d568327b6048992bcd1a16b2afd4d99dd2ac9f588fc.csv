@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","FAILURE","2023-04-11T16:13:01.487-05:00[America/Bogota]","0.0","71.29"
+"Verificar el login en ventas","Verificar el ingreso con contraseña o usuario incorrectos","ERROR","2023-04-12T09:25:30.228-05:00[America/Bogota]","0.0","27.09"

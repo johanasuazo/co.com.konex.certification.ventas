@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Verificar el login con diferentes usuarios","Verificar el ingreso correcto con diferentes usuarios","SUCCESS","2023-04-11T16:54:00.378-05:00[America/Bogota]","0.0","48.48"
+"Verificar el login en ventas","Verificar el ingreso correcto con un usuario","SUCCESS","2023-04-12T08:50:30.472-05:00[America/Bogota]","0.0","20.23"
