@@ -1,0 +1,4 @@
+co/com/konex/certification/ventas/runners/RunnerTags.java
+ co.com.konex.certification.ventas.runners.RunnerTags
+co/com/konex/certification/ventas/stepdefinitions/LoginStepdefinitions.java
+ co.com.konex.certification.ventas.stepdefinitions.LoginStepdefinitions

@@ -8,10 +8,10 @@ import co.com.konex.certification.ventas.tasks.Ingresar;
 import co.com.konex.certification.ventas.tasks.Seleccionar;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.an.Y;
+import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Dado;
+import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -24,68 +24,38 @@ public class LoginStepdefinitions {
 
     @DataTableType
     public TablaUsuarios tablaUsuariosEntry(Map<String, String> entry) {
-        return new TablaUsuarios(entry.get("usuario"), entry.get("contrasenna"));
+        return new TablaUsuarios(entry.get("usuario"), entry.get("contrasenna"), entry.get("papeleria"));
     }
 
     @Before
     public void iniciarEscenario(){
         OnStage.setTheStage(new OnlineCast());
     }
-    @Given("que el usuario ingrese a web ventas")
-    public void queElUsuarioIngreseAWebVentas() {
-        OnStage.theActorCalled("usuario").wasAbleTo(Abrir.laPagina());
-    }
-
-    @When("digita su usuario y contrasenna")
-    public void digitaSuUsuarioYContrasenna(List<TablaUsuarios> tablaUsuarios) {
-        OnStage.theActorInTheSpotlight().attemptsTo(Ingresar.credenciales(tablaUsuarios.get(0)));
-    }
-
-    @And("selecciona una papeleria")
-    public void seleccionaUnaPapeleria() {
-        OnStage.theActorInTheSpotlight().attemptsTo(Seleccionar.papeleria());
-    }
-
-    @Then("verifica el ingreso correcto")
-    public void verificaElIngresoCorrecto() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Verificar.home(), Matchers.equalTo("Dashboard")));
-    }
-
-
-    //Caso2
-    @Given("^que el usuario ingresa a webventas$")
+    //Caso1
+    @Dado("^que el usuario ingresa a webventas$")
     public void queElUsuarioIngresaAWebventas() {
         OnStage.theActorCalled("usuario").wasAbleTo(Abrir.laPagina());
     }
 
-    @When("^digita usuario y contrasenna$")
+    @Cuando("^digita usuario y contrasenna$")
     public void digitaUsuarioYContrasenna(List<TablaUsuarios> tablaUsuarios) {
         OnStage.theActorInTheSpotlight().attemptsTo(Ingresar.credenciales(tablaUsuarios.get(0)));
     }
 
-    @And("^selecciona papeleria")
-    public void seleccionaPapeleria() {
-        OnStage.theActorInTheSpotlight().attemptsTo(Seleccionar.papeleria());
+    @Y("^selecciona papeleria$")
+    public void seleccionaPapeleria(List<TablaUsuarios> tablaUsuarios) {
+        OnStage.theActorInTheSpotlight().attemptsTo(Seleccionar.papeleria(tablaUsuarios.get(0)));
     }
 
-    @Then("^verifica que ingreso correctamente$")
+    @Entonces("^verifica que ingreso correctamente$")
     public void verificaQueIngresoCorrectamente() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Verificar.home(), Matchers.equalTo("Dashboard")));
     }
 
-    //Caso3
-    @Given("que el usuario ungresa a webventas")
-    public void queElUsuarioUngresaAWebventas() {
-        OnStage.theActorCalled("usuario").wasAbleTo(Abrir.laPagina());
-    }
+    //Caso2
 
-    @When("digita usuario o contrasenna incorrectos")
-    public void digitaUsuarioOContrasennaIncorrectos(List<TablaUsuarios> tablaUsuarios) {
-        OnStage.theActorInTheSpotlight().attemptsTo(Ingresar.credenciales(tablaUsuarios.get(0)));
-    }
-
-    @Then("verifica el mensaje de error")
-    public void verificaElMensajeDeError() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Validar.mensajeError(),Matchers.equalTo("El Usuario y la Contraseña que ingresó no ha sido reconocido")));
+    @Entonces("verifica el mensaje de error")
+    public void verificaElMensajeDeError(List<String> msjError) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Validar.mensajeError(),Matchers.equalTo(msjError.get(1))));
     }
 }
